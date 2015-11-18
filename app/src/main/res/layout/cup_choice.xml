@@ -10,16 +10,17 @@
 				tools:context=".MainActivity" >
 
 	<TextView
-		android:layout_width="wrap_content"
+		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:textAppearance="?android:attr/textAppearanceLarge"
 		android:text="WYBIERZ"
 		android:id="@+id/textView3"
-		android:textSize="80dp"
+		android:textSize="78dp"
 		android:fontFamily="sans-serif-medium"
 		android:layout_marginTop="45dp"
 		android:layout_alignParentTop="true"
-		android:layout_centerHorizontal="true" />
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentStart="true" />
 
 	<TextView
 		android:layout_width="wrap_content"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 				xmlns:tools="http://schemas.android.com/tools"
-				android:layout_width="match_parent"
+				android:layout_width="fill_parent"
 				android:layout_height="match_parent"
 				android:paddingLeft="@dimen/activity_horizontal_margin"
 				android:paddingRight="@dimen/activity_horizontal_margin"
@@ -22,29 +22,40 @@
 		android:layout_alignParentRight="true"/>
 
 	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="CZEGO"
+		android:id="@+id/textView3"
+		android:textSize="78dp"
+		android:fontFamily="sans-serif-medium"
+		android:layout_marginTop="45dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentStart="true"
+		android:gravity="center_horizontal" />
+
+	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:textAppearance="?android:attr/textAppearanceLarge"
-		android:text="CZEGO\nSIĘ NAPIJESZ?"
+		android:text="SIĘ NAPIJESZ?"
 		android:id="@+id/textView2"
-		android:textSize="50dp"
+		android:textSize="40dp"
 		android:fontFamily="sans-serif-medium"
-		android:layout_marginTop="31dp"
-		android:layout_alignParentTop="true"
-		android:layout_alignParentStart="true"
-		android:layout_alignParentEnd="true"
-		android:gravity="center_horizontal" />
+		android:layout_below="@+id/textView3"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="25dp" />
 
 	<RadioButton
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="KAWA"
 		android:id="@+id/radioButton"
-		android:layout_marginTop="55dp"
 		android:fontFamily="sans-serif-medium"
-		android:textSize="36dp"
+		android:textSize="28dp"
 		android:checked="false"
-		android:layout_below="@+id/textView2"
+		android:layout_centerVertical="true"
 		android:layout_alignParentStart="true" />
 
 	<RadioButton
@@ -52,12 +63,12 @@
 		android:layout_height="wrap_content"
 		android:text="HERBATA CZARNA"
 		android:id="@+id/radioButton2"
-		android:layout_marginTop="26dp"
+		android:layout_marginTop="22dp"
 		android:fontFamily="sans-serif-medium"
-		android:textSize="36dp"
+		android:textSize="28dp"
 		android:checked="false"
 		android:layout_below="@+id/radioButton"
-		android:layout_alignStart="@+id/radioButton" />
+		android:layout_alignParentStart="true" />
 
 	<RadioButton
 		android:layout_width="wrap_content"
@@ -66,7 +77,7 @@
 		android:id="@+id/radioButton3"
 		android:layout_marginTop="26dp"
 		android:fontFamily="sans-serif-medium"
-		android:textSize="36dp"
+		android:textSize="28dp"
 		android:checked="false"
 		android:layout_below="@+id/radioButton2"
 		android:layout_alignStart="@+id/radioButton2" />
@@ -78,8 +89,9 @@
 		android:id="@+id/radioButton4"
 		android:layout_marginTop="28dp"
 		android:fontFamily="sans-serif-medium"
-		android:textSize="36dp"
+		android:textSize="28dp"
 		android:checked="false"
 		android:layout_below="@+id/radioButton3"
-		android:layout_alignStart="@+id/radioButton3" />
+		android:layout_alignStart="@+id/radioButton3"
+		android:layout_alignParentEnd="true" />
 </RelativeLayout >
