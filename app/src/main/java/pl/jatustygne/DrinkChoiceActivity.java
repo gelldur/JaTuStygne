@@ -2,7 +2,9 @@ package pl.jatustygne;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 
 import pl.jatustygne.bus.EventCofeeTemperature;
@@ -17,6 +19,14 @@ public class DrinkChoiceActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.drink_choice);
+		ImageButton settingsButton = (ImageButton) findViewById(R.id.settingsButton);
+		settingsButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent myIntent = new Intent(DrinkChoiceActivity.this, MainActivity.class);
+				DrinkChoiceActivity.this.startActivity(myIntent);
+			}
+		});
 		RadioButton radioButton1 = (RadioButton) findViewById(R.id.radioButton);
 		RadioButton radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
 		RadioButton radioButton3 = (RadioButton) findViewById(R.id.radioButton3);
