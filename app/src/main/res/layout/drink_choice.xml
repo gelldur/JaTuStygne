@@ -43,9 +43,9 @@
 		android:id="@+id/textView2"
 		android:textSize="40dp"
 		android:fontFamily="sans-serif-medium"
+		android:layout_marginTop="21dp"
 		android:layout_below="@+id/textView3"
-		android:layout_centerHorizontal="true"
-		android:layout_marginTop="25dp" />
+		android:layout_centerHorizontal="true" />
 
 	<RadioButton
 		android:layout_width="wrap_content"
@@ -55,8 +55,9 @@
 		android:fontFamily="sans-serif-medium"
 		android:textSize="28dp"
 		android:checked="false"
-		android:layout_centerVertical="true"
-		android:layout_alignParentStart="true" />
+		android:layout_below="@+id/textView2"
+		android:layout_alignParentStart="true"
+		android:layout_marginTop="65dp" />
 
 	<RadioButton
 		android:layout_width="wrap_content"
