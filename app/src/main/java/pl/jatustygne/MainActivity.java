@@ -1,7 +1,6 @@
 package pl.jatustygne;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import pl.jatustygne.bus.EventCofeeTemperature;
 import pl.jatustygne.bus.EventCoffeIsCold;
@@ -9,7 +8,7 @@ import pl.jatustygne.bus.EventCoffeIsGood;
 import pl.jatustygne.bus.EventCoffeToHot;
 import pl.jatustygne.bus.GlobalEventBus;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	public void onEvent(EventCoffeIsCold event) {
-	
+
 	}
 
 	public void onEvent(EventCoffeIsGood event) {
