@@ -24,7 +24,11 @@ public class BluetoothStateReceiver extends BroadcastReceiver {
 		final SensoroBeaconManager sensoroBeaconManager = SensoroBeaconManager.getInstance(context);
 
 		if (state == BluetoothAdapter.STATE_OFF || state == BluetoothAdapter.STATE_TURNING_OFF) {
-			sensoroBeaconManager.stopService();
+			try {
+				sensoroBeaconManager.stopService();
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
 		} else if (intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, -1) == BluetoothAdapter.STATE_ON) {
 			if (sensoroBeaconManager.isBluetoothEnabled()) {
 				try {
