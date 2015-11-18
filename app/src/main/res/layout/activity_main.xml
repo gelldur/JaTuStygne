@@ -12,11 +12,53 @@
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Hello World!" />
+		android:text="Kawa"
+		android:fontFamily="sans-serif-medium"
+		android:textSize="36dp" />
 
 
 	<fragment
 		android:name="pl.jatustygne.fragment.TemperatureFragment"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Herbata"
+		android:fontFamily="sans-serif-medium"
+		android:textSize="36dp" />
+
+
+	<fragment
+		android:name="pl.jatustygne.fragment.TemperatureFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Czekolada"
+		android:fontFamily="sans-serif-medium"
+		android:textSize="36dp" />
+
+
+	<fragment
+		android:name="pl.jatustygne.fragment.TemperatureFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Herbata zielona"
+		android:fontFamily="sans-serif-medium"
+		android:textSize="36dp" />
+
+
+	<fragment
+		android:name="pl.jatustygne.fragment.TemperatureFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
 </RelativeLayout >

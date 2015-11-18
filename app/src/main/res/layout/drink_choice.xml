@@ -11,8 +11,8 @@
 
 	<ImageButton
 		android:id="@+id/settingsButton"
-		android:layout_width="128px"
-		android:layout_height="128px"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
 		android:src="@drawable/settings"
 		android:layout_alignParentRight="true"/>
 
