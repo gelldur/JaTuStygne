@@ -1,3 +1,12 @@
+/app/app.iml
+/JaTuStygne.iml
+/.idea/vcs.xml
+/.idea/runConfigurations.xml
+/.idea/modules.xml
+/.idea/misc.xml
+/.idea/gradle.xml
+/.idea/copyright/profiles_settings.xml
+/.idea/compiler.xml
 # Built application files
 *.apk
 *.ap_
@@ -25,3 +34,11 @@ proguard/
 
 # Log Files
 *.log
+
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
