@@ -24,6 +24,7 @@ dependencies {
 	testCompile 'junit:junit:4.12'
 	compile 'com.android.support:appcompat-v7:22.2.1'
 
+	compile 'de.greenrobot:eventbus:2.4.0'
 	compile 'com.yahoo.mobile.client.android.util.rangeseekbar:rangeseekbar-library:0.1.0'
 
 	compile files ( '../libraries/SDK-Android/SensoroSDK/sensoro-scanner-1.0.0.jar' )
