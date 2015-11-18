@@ -15,7 +15,8 @@
 		android:layout_height="wrap_content"
 		android:text="Kawa"
 		android:fontFamily="sans-serif-medium"
-		android:textSize="36dp" />
+		android:textSize="36dp"
+		android:textColor="#000000" />
 
 
 	<fragment
@@ -28,7 +29,8 @@
 		android:layout_height="wrap_content"
 		android:text="Herbata"
 		android:fontFamily="sans-serif-medium"
-		android:textSize="36dp" />
+		android:textSize="36dp"
+		android:textColor="#000000" />
 
 
 	<fragment
@@ -41,7 +43,8 @@
 		android:layout_height="wrap_content"
 		android:text="Czekolada"
 		android:fontFamily="sans-serif-medium"
-		android:textSize="36dp" />
+		android:textSize="36dp"
+		android:textColor="#000000" />
 
 
 	<fragment
@@ -54,7 +57,8 @@
 		android:layout_height="wrap_content"
 		android:text="Herbata zielona"
 		android:fontFamily="sans-serif-medium"
-		android:textSize="36dp" />
+		android:textSize="36dp"
+		android:textColor="#000000" />
 
 
 	<fragment

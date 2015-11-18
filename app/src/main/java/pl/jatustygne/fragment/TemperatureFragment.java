@@ -25,7 +25,7 @@ public class TemperatureFragment extends Fragment {
 		floatRangeSeekBar.setColorFilter(Color.BLACK);
 		Random random = new Random();
 		float rand1 = (random.nextFloat() * 100) % 30 + 30;
-		float rand2 = (random.nextFloat() * 100) % 40 + 30;
+		float rand2 = (random.nextFloat() * 100) % 30 + 70;
 		floatRangeSeekBar.setSelectedMinValue(rand1 < rand2 ? rand1 : rand2);
 		floatRangeSeekBar.setSelectedMaxValue(rand1 < rand2 ? rand2 : rand1);
 //		floatRangeSeekBar.setOnRangeSeekBarChangeListener(new RangeSeekBar.OnRangeSeekBarChangeListener<Float>() {
