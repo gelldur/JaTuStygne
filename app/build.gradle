@@ -23,4 +23,9 @@ dependencies {
 	compile fileTree ( dir: 'libs', include: ['*.jar'] )
 	testCompile 'junit:junit:4.12'
 	compile 'com.android.support:appcompat-v7:22.2.1'
+	compile files ( '../libraries/SDK-Android/SensoroSDK/sensoro-scanner-1.0.0.jar' )
+	compile files ( '../libraries/SDK-Android/SensoroSDK/sensorobeaconkit-4.1.0.jar' )
+	compile files ( '../libraries/SDK-Android/SensoroSDK/gson-2.3.1.jar' )
+	compile files ( '../libraries/SDK-Android/SensoroSDK/greendao-1.3.7.jar' )
+	compile files ( '../libraries/SDK-Android/SensoroSDK/android-async-http-1.4.6.jar' )
 }
