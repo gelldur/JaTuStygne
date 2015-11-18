@@ -12,7 +12,7 @@ import com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar;
 /**
  * Created by Dawid Drozd aka Gelldur on 11/18/15.
  */
-public abstract class TemperatureFragment extends Fragment {
+public class TemperatureFragment extends Fragment {
 	@Nullable
 	@Override
 	public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
