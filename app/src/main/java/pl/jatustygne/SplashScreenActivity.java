@@ -12,6 +12,7 @@ public class SplashScreenActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
+		setContentView(R.layout.splashscreen);
 
 		_handler.postDelayed(new Runnable() {
 			@Override
