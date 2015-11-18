@@ -19,6 +19,8 @@ import pl.jatustygne.bus.GlobalEventBus;
  * Created by Dawid Drozd aka Gelldur on 11/18/15.
  */
 public class BeaconListener implements BeaconManagerListener {
+	private static ArrayList<Beacon> beacons;
+
 	@Override
 	public void onNewBeacon(final Beacon beacon) {
 	}
@@ -29,11 +31,12 @@ public class BeaconListener implements BeaconManagerListener {
 
 	@Override
 	public void onUpdateBeacon(final ArrayList<Beacon> arrayList) {
+		beacons = arrayList;
 		System.out.println("Beacons: " + arrayList.size());
 		for (Beacon beacon : arrayList) {
 //			System.out.println(beacon.getProximityUUID());
 //			if (beacon.getMacAddress().equalsIgnoreCase("01:17:C5:56:33:D4") == false) {
-			if (beacon.getSerialNumber().equalsIgnoreCase("0117C55633d4") == false) {
+				if (beacon.getSerialNumber().equalsIgnoreCase("0117C55633d4") == false) {
 				continue;
 			}
 			System.out.println("Beacon temperature: " + beacon.getTemperature());
@@ -76,4 +79,8 @@ public class BeaconListener implements BeaconManagerListener {
 	}
 
 	private ArrayDeque<Float> _temperatureSample = new ArrayDeque<>(16);
+
+	public static ArrayList<Beacon> getBeacons() {
+		return beacons;
+	}
 }

@@ -58,6 +58,11 @@
 			android:configChanges="orientation|keyboardHidden|screenSize"
 			android:screenOrientation="portrait" />
 
+		<activity
+			android:name=".CupChoiceActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:screenOrientation="portrait" />
+
 		<receiver android:name=".receiver.BluetoothStateReceiver" >
 			<intent-filter >
 				<action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
