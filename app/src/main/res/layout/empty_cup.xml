@@ -9,14 +9,24 @@
 				android:paddingBottom="@dimen/activity_vertical_margin"
 				tools:context=".MainActivity" >
 
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/imageView2"
+		android:layout_marginTop="39dp"
+		android:background="@drawable/kubek"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true" />
+
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:textAppearance="?android:attr/textAppearanceLarge"
-		android:text="Twój kubek jest pusty"
-		android:id="@+id/emptyCupTextView"
-		android:layout_alignParentTop="true"
-		android:layout_alignParentStart="true"
-		android:layout_marginStart="75dp"
-		android:layout_marginTop="59dp" />
+		android:text="PUSTY\nKUBEK"
+		android:id="@+id/textView"
+		android:textSize="60dp"
+		android:fontFamily="sans-serif-medium"
+		android:layout_below="@+id/imageView2"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="54dp" />
 </RelativeLayout >

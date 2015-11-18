@@ -1,5 +1,7 @@
 package pl.jatustygne;
 
+import android.util.Log;
+
 import com.sensoro.beacon.kit.Beacon;
 import com.sensoro.beacon.kit.BeaconManagerListener;
 
@@ -29,8 +31,10 @@ public class BeaconListener implements BeaconManagerListener {
 	public void onUpdateBeacon(final ArrayList<Beacon> arrayList) {
 		System.out.println("Beacons: " + arrayList.size());
 		for (Beacon beacon : arrayList) {
-			if (beacon.getMacAddress().equalsIgnoreCase("01:17:C5:56:33:D4") == false) {
-				return;
+//			System.out.println(beacon.getProximityUUID());
+//			if (beacon.getMacAddress().equalsIgnoreCase("01:17:C5:56:33:D4") == false) {
+			if (beacon.getSerialNumber().equalsIgnoreCase("0117C55633d4") == false) {
+				continue;
 			}
 			System.out.println("Beacon temperature: " + beacon.getTemperature());
 
@@ -58,8 +62,11 @@ public class BeaconListener implements BeaconManagerListener {
 
 			GlobalEventBus.getInstance().postSticky(new EventCofeeTemperature(sampledTemperature));
 
-			if (sampledTemperature > 44) {
+			Log.i("X",temperature + "[" + sampledTemperature + "]");
+
+			if (sampledTemperature > 38) {
 				GlobalEventBus.getInstance().postSticky(new EventCoffeToHot());
+
 			} else if (sampledTemperature > 30) {
 				GlobalEventBus.getInstance().postSticky(new EventCoffeIsGood());
 			} else {

@@ -33,6 +33,31 @@
 			android:configChanges="orientation|keyboardHidden|screenSize"
 			android:screenOrientation="portrait" />
 
+		<activity
+			android:name=".EmptyCupActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:screenOrientation="portrait" />
+
+		<activity
+			android:name=".HotDrinkActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:screenOrientation="portrait" />
+
+		<activity
+			android:name=".GoodDrinkActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:screenOrientation="portrait" />
+
+		<activity
+			android:name=".ColdDrinkActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:screenOrientation="portrait" />
+
+		<activity
+			android:name=".DrinkChoiceActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:screenOrientation="portrait" />
+
 		<receiver android:name=".receiver.BluetoothStateReceiver" >
 			<intent-filter >
 				<action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />

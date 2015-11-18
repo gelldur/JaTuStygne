@@ -13,9 +13,61 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:textAppearance="?android:attr/textAppearanceLarge"
-		android:text="Wybierz napój"
-		android:id="@+id/drinkChoiceTextView"
-		android:layout_marginTop="60dp"
+		android:text="CZEGO\nSIĘ NAPIJESZ?"
+		android:id="@+id/textView2"
+		android:textSize="50dp"
+		android:fontFamily="sans-serif-medium"
+		android:layout_marginTop="31dp"
 		android:layout_alignParentTop="true"
-		android:layout_centerHorizontal="true" />
+		android:layout_alignParentStart="true"
+		android:layout_alignParentEnd="true"
+		android:gravity="center_horizontal" />
+
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="KAWA"
+		android:id="@+id/radioButton"
+		android:layout_marginTop="55dp"
+		android:fontFamily="sans-serif-medium"
+		android:textSize="36dp"
+		android:checked="false"
+		android:layout_below="@+id/textView2"
+		android:layout_alignParentStart="true" />
+
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="HERBATA CZARNA"
+		android:id="@+id/radioButton2"
+		android:layout_marginTop="26dp"
+		android:fontFamily="sans-serif-medium"
+		android:textSize="36dp"
+		android:checked="false"
+		android:layout_below="@+id/radioButton"
+		android:layout_alignStart="@+id/radioButton" />
+
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="CZEKOLADA"
+		android:id="@+id/radioButton3"
+		android:layout_marginTop="26dp"
+		android:fontFamily="sans-serif-medium"
+		android:textSize="36dp"
+		android:checked="false"
+		android:layout_below="@+id/radioButton2"
+		android:layout_alignStart="@+id/radioButton2" />
+
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="HERBATA ZIELONA"
+		android:id="@+id/radioButton4"
+		android:layout_marginTop="28dp"
+		android:fontFamily="sans-serif-medium"
+		android:textSize="36dp"
+		android:checked="false"
+		android:layout_below="@+id/radioButton3"
+		android:layout_alignStart="@+id/radioButton3" />
 </RelativeLayout >
