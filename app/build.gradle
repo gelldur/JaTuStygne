@@ -26,6 +26,7 @@ dependencies {
 
 	compile 'de.greenrobot:eventbus:2.4.0'
 	compile 'com.yahoo.mobile.client.android.util.rangeseekbar:rangeseekbar-library:0.1.0'
+	compile 'joda-time:joda-time:2.3'
 
 	compile files ( '../libraries/SDK-Android/SensoroSDK/sensoro-scanner-1.0.0.jar' )
 	compile files ( '../libraries/SDK-Android/SensoroSDK/sensorobeaconkit-4.1.0.jar' )
